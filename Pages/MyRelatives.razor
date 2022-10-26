@@ -1,0 +1,51 @@
+﻿@using Extensions;
+@inject NavigationManager UriHelper
+
+@page "/myrelatives"
+<PageTitle>Мои родные</PageTitle>
+
+<header class="rel-header">
+    <h1>Мои родные</h1>
+</header>
+
+<div class="main-container">
+    <table>
+        <thead>
+            <tr>
+                <td>Фото</td>
+                <td>Имя</td>
+                <td>Дата</td>
+                <td>Место захоронения</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bstr">
+                <td><img src="./images/photoexample.jpg" height="120" width="120" style="border-radius:200px" /></td>
+                <td>Фигалов максим анатольевич</td>
+                <td>12.10.1989 - 13.05.2012</TD>
+                <td>lorem ipsum dolor sit amet cons</td>
+            </tr>
+            <tr class="bstr">
+                <td><img src="./images/photoexample.jpg" height="120" width="120" style="border-radius:200px" /></td>
+                <td>Фигалов максим анатольевич</td>
+                <td>12.10.1989 - 13.05.2012</TD>
+                <td>lorem ipsum dolor sit amet cons</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@code {
+    void Navigate() { UriHelper.NavigateTo("counter"); }
+    
+    public void MouseOver(MouseEventArgs e)
+    {
+       
+    }
+
+    public void MouseOut(MouseEventArgs e)
+    {
+
+    }
+    
+}
